@@ -114,7 +114,34 @@ if (!doNotTrack) {
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>Name of the work 3</h1>
-         <p>Fifth abundantly made Give sixth hath. Cattle creature i be don&rsquo;t them.</p>
+         <pre><code class="language-r,">library(leaflet)
+library(tidyverse)
+library(rgdal)
+</code></pre>
+
+<pre><code class="language-r,">m &lt;- leaflet() %&gt;%
+  addTiles() %&gt;%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup=&quot;The birthplace of R&quot;)
+m  # Print the map
+
+states &lt;- readOGR(&quot;./cb_2013_us_state_20m/cb_2013_us_state_20m.shp&quot;,
+  layer = &quot;cb_2013_us_state_20m&quot;, GDAL1_integer64_policy = TRUE)
+neStates &lt;- subset(states, states$STUSPS %in% c(
+  &quot;CT&quot;,&quot;ME&quot;,&quot;MA&quot;,&quot;NH&quot;,&quot;RI&quot;,&quot;VT&quot;,&quot;NY&quot;,&quot;NJ&quot;,&quot;PA&quot;
+))
+
+leaflet(neStates) %&gt;%
+  addPolygons(color = &quot;#444444&quot;, weight = 1, smoothFactor = 0.5,
+    opacity = 1.0, fillOpacity = 0.5,
+    fillColor = ~colorQuantile(&quot;YlOrRd&quot;, ALAND)(ALAND),
+    highlightOptions = highlightOptions(color = &quot;white&quot;, weight = 2,
+      bringToFront = TRUE))
+</code></pre>
+
+<pre><code class="language-r">m
+</code></pre>
+
+<p>Fifth abundantly made Give sixth hath. Cattle creature i be don&rsquo;t them.</p>
 
 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
