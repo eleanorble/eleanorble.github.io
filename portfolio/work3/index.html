@@ -114,60 +114,8 @@ if (!doNotTrack) {
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1></h1>
-         <pre><code class="language-r,">library(leaflet)
-library(tidyverse)
-library(rgdal)
-</code></pre>
+         <p><img src="img/portfolio/Characteristics-and-practices-of-landlords.JPG" alt="characteristics of landlords" /></p>
 
-<pre><code class="language-r,">m &lt;- leaflet() %&gt;%
-  addTiles() %&gt;%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup=&quot;The birthplace of R&quot;)
-m  # Print the map
-
-states &lt;- readOGR(&quot;./cb_2013_us_state_20m/cb_2013_us_state_20m.shp&quot;,
-  layer = &quot;cb_2013_us_state_20m&quot;, GDAL1_integer64_policy = TRUE)
-neStates &lt;- subset(states, states$STUSPS %in% c(
-  &quot;CT&quot;,&quot;ME&quot;,&quot;MA&quot;,&quot;NH&quot;,&quot;RI&quot;,&quot;VT&quot;,&quot;NY&quot;,&quot;NJ&quot;,&quot;PA&quot;
-))
-
-leaflet(neStates) %&gt;%
-  addPolygons(color = &quot;#444444&quot;, weight = 1, smoothFactor = 0.5,
-    opacity = 1.0, fillOpacity = 0.5,
-    fillColor = ~colorQuantile(&quot;YlOrRd&quot;, ALAND)(ALAND),
-    highlightOptions = highlightOptions(color = &quot;white&quot;, weight = 2,
-      bringToFront = TRUE))
-</code></pre>
-
-<pre><code class="language-r">m
-</code></pre>
-
-<p>Fifth abundantly made Give sixth hath. Cattle creature i be don&rsquo;t them.</p>
-
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-<ol>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
-
-<blockquote>
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-</blockquote>
-
-<h2 id="header-level-2">Header Level 2</h2>
-
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-
-<ul>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-
-<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
          
       </div>
     </div>

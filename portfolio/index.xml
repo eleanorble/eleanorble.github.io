@@ -26,34 +26,7 @@
       <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
       <guid>/portfolio/work3/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-r,&#34;&gt;library(leaflet)
-library(tidyverse)
-library(rgdal)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r,&#34;&gt;m &amp;lt;- leaflet() %&amp;gt;%
-  addTiles() %&amp;gt;%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup=&amp;quot;The birthplace of R&amp;quot;)
-m  # Print the map
-
-states &amp;lt;- readOGR(&amp;quot;./cb_2013_us_state_20m/cb_2013_us_state_20m.shp&amp;quot;,
-  layer = &amp;quot;cb_2013_us_state_20m&amp;quot;, GDAL1_integer64_policy = TRUE)
-neStates &amp;lt;- subset(states, states$STUSPS %in% c(
-  &amp;quot;CT&amp;quot;,&amp;quot;ME&amp;quot;,&amp;quot;MA&amp;quot;,&amp;quot;NH&amp;quot;,&amp;quot;RI&amp;quot;,&amp;quot;VT&amp;quot;,&amp;quot;NY&amp;quot;,&amp;quot;NJ&amp;quot;,&amp;quot;PA&amp;quot;
-))
-
-leaflet(neStates) %&amp;gt;%
-  addPolygons(color = &amp;quot;#444444&amp;quot;, weight = 1, smoothFactor = 0.5,
-    opacity = 1.0, fillOpacity = 0.5,
-    fillColor = ~colorQuantile(&amp;quot;YlOrRd&amp;quot;, ALAND)(ALAND),
-    highlightOptions = highlightOptions(color = &amp;quot;white&amp;quot;, weight = 2,
-      bringToFront = TRUE))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;m
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Fifth abundantly made Give sixth hath. Cattle creature i be don&amp;rsquo;t them.&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
